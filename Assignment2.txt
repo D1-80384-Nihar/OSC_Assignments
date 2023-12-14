@@ -1,0 +1,138 @@
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ ls -t
+Assignment2.txt  Assignment1.txt
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ man ls
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ ls -S
+Assignment1.txt  Assignment2.txt
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ man ls
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ ls -i
+406444 Assignment1.txt  406939 Assignment2.txt
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ cd ..
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments$ ls -R
+.:
+DSA-Assignment  Hackathon  JavaAssignment  OS-Assignment
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments$ cd ~/CDAC/Assignments/OS-Assignment
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ ls -R
+.:
+Assignment1.txt  Assignment2.txt
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ mkdir one two three four
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ mkdir -p dir1/dir2/dir3
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ ls -R
+.:
+Assignment1.txt  Assignment2.txt  dir1  four  one  three  two
+
+./dir1:
+dir2
+
+./dir1/dir2:
+dir3
+
+./dir1/dir2/dir3:
+
+./four:
+
+./one:
+
+./three:
+
+./two:
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ cat >a.txt
+Lobhas Nikumbh
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ cat >>a.txt
+kalyan
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ cat a.txt
+Lobhas Nikumbh
+kalyan
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ touch b.txt -t 201010161000
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ stat b.txt
+  File: b.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 10307h/66311d	Inode: 407311      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/   luffy)   Gid: ( 1000/   luffy)
+Access: 2023-11-28 17:15:56.963324319 +0530
+Modify: 2010-10-16 10:00:00.000000000 +0530
+Change: 2023-11-28 17:15:52.159372894 +0530
+ Birth: 2023-11-28 17:15:52.159372894 +0530
+ ---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ mkdir one
+mkdir: cannot create directory ‘one’: File exists
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ cd one
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ touch 1.txt 11.txt 111.txt
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ mkdir two
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ cd two
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two$ touch 2.txt 22.txt 222.txt
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two$ mkdir three
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two$ cd three
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three$ touch 3.txt 33.txt 333.txt  
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three$ mkdir four
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three$ cd four
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four$ touch 4.txt 44.txt 444.txt
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four$ mkdir five
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four$ cd five
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four/five$ cd ~
+---------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~$ ls ~/CDAC/Assignments/OS-Assignment/one/two/three/four/five
+555.txt  55.txt  5.txt
+luffy@luffy-Nitro-ANV15-51:~$ kill firefox
+bash: kill: firefox: arguments must be process or job IDs
+luffy@luffy-Nitro-ANV15-51:~$ kill 4568
+luffy@luffy-Nitro-ANV15-51:~$ man cat
+luffy@luffy-Nitro-ANV15-51:~$ cat ~/CDAC/Assignments/OS-Assignment/one/two/three/four/44.txt
+luffy@luffy-Nitro-ANV15-51:~$ cat >~/CDAC/Assignments/OS-Assignment/one/two/three/four/44.txt
+Lobhas
+luffy@luffy-Nitro-ANV15-51:~$ cat ~/CDAC/Assignments/OS-Assignment/one/two/three/four/44.txt
+Lobhas
+luffy@luffy-Nitro-ANV15-51:~$ cat ~/CDAC/Assignments/OS-Assignment/one/two/three/four/44.txt
+Lobhas
+luffy@luffy-Nitro-ANV15-51:~$ rm ~/CDAC/Assignments/OS-Assignment/one/two/three/four/five/555.txt
+luffy@luffy-Nitro-ANV15-51:~$ ls ~/CDAC/Assignments/OS-Assignment/one/two/three/four/five/
+55.txt  5.txt
+luffy@luffy-Nitro-ANV15-51:~$ cd ~/CDAC/Assignments/OS-Assignment/one/two/three/four/five
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four/five$ cat >../../3.txt
+DAC   
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four/five$ cat ../../3.txt
+DAC
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four/five$ ls ../../../
+222.txt  22.txt  2.txt  three
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four/five$ rm ../../../222.txt
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one/two/three/four/five$ cd ../../../..
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm /two/three/four/five
+rm: cannot remove '/two/three/four/five': No such file or directory
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm /two/three/four/five/
+rm: cannot remove '/two/three/four/five/': No such file or directory
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm /two/three/four/five/*
+rm: cannot remove '/two/three/four/five/*': No such file or directory
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ man rm
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm /two/three/four/five/*
+rm: cannot remove '/two/three/four/five/*': No such file or directory
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm /two/three/four/five/*
+rm: cannot remove '/two/three/four/five/*': No such file or directory
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm two/three/four/five/*
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm two/three/four/five
+rm: cannot remove 'two/three/four/five': Is a directory
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm two/three/four/five/
+rm: cannot remove 'two/three/four/five/': Is a directory
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rmdir two/three/four/five/
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ rm -R two/three/four
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ cd ~
+luffy@luffy-Nitro-ANV15-51:~$ cd -
+/home/luffy/CDAC/Assignments/OS-Assignment/one
+-------------------------------------------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ touch two/three/3.txt -t 202311281816
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment/one$ stat two/three/3.txt
+  File: two/three/3.txt
+  Size: 4         	Blocks: 8          IO Block: 4096   regular file
+Device: 10307h/66311d	Inode: 407338      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/   luffy)   Gid: ( 1000/   luffy)
+Access: 2023-11-28 18:16:00.000000000 +0530
+Modify: 2023-11-28 18:16:00.000000000 +0530
+Change: 2023-11-28 18:16:59.309320852 +0530
+ Birth: 2023-11-28 17:21:34.089731815 +0530
+

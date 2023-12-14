@@ -1,0 +1,47 @@
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ touch Assignment4.txt
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ wc data.txt
+  6  25 145 data.txt
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ grep -w "file" data.txt
+In Linux everything is file
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ grep -v "files" data.txt
+Linux is open source.
+In Linux everything is file
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ grep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ grep "[.]$" data.txt
+Linux is open source.
+files have permissions.
+files have inode no.
+files have size.
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ head -2 data.txt
+Linux is open source.
+In Linux everything is file
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ tail -3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+---------------------------------------------------------------------------------------
+luffy@luffy-Nitro-ANV15-51:~/CDAC/Assignments/OS-Assignment$ head -5 data.txt | tail -3
+files have permissions.
+files have inode no.
+files have size.
+---------------------------------------------------------------------------------------
